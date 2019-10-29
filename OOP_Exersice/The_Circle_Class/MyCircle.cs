@@ -38,19 +38,31 @@ namespace The_Circle_Class
             return radius * radius * Math.PI;
         }
 
-        public string GetColor()
+        public string Color()
         {
-            return color;
+            return this.color;
         }
 
-        public void SetRadius(double newRadius)
+        //overload
+        public override string ToString()
         {
-            radius = newRadius;
+            return String.Format("The circle has radius of {0} and set color is {1}", radius, color);
         }
 
-        public void SetColor(string newColor)
-        {
-            color = newColor;
-        }
+        //------------------------------------
+        //public string GetColor()
+        //{
+        //    return color;
+        //}
+        //public void SetRadius(double newRadius)
+        //{
+        //    radius = newRadius;
+        //}
+
+        //public void SetColor(string newColor)
+        //{
+        //    color = newColor;
+        //}
+        //-------------------------------------
     }
 }
